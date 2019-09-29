@@ -1,0 +1,112 @@
+
+//Wide screen 1171px
+@include mediaXl{
+
+}
+
+// Desktops & Laptops 769px
+@include mediaLg{
+
+.gallery-enter img{
+    width: 950px;
+}
+}
+
+// Tablets & Small Laptops 768px
+@include mediaMd {
+
+.nav li{
+   margin: 0 20px; 
+}
+.nav li a{
+    font-size: .7rem;
+}
+.gallery-enter img{
+    width: 300px;
+}
+}
+
+
+// Smartphones 580px
+@include mediaSm{
+
+.navbar{
+    overflow-x: hidden;
+    .menu{
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f1f1f1;
+        overflow: hidden;
+        max-height: 0;
+        a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        }
+    }
+    .btn{
+        display: block;
+        cursor: pointer;
+    }
+    .show{
+        max-height: 500px;
+    }
+}
+
+
+.gallery{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+} 
+ .showcase::after{
+    height: 50vh;
+}
+.content{
+    top: 0%;
+    margin-top: 1px;
+    .logo{
+    height: 70px;
+    width: 130px;
+    }
+    .title{
+    display: none;
+    }
+    .text{
+    display: none;
+    }
+    }
+.grid-2{
+    grid-template-columns: 1fr;
+    .center{
+        display: none;
+    }
+    }
+.grid-3{
+    margin-top: 30px;
+    grid-template-columns:  1fr;
+    grid-gap: 20px;
+}
+.galleryimage{
+    width: 300px;
+}     
+}
+
+
+
+// Small Smartphones 450px
+@include mediaXsm{
+.navbar .nav{
+    font-size: 1rem;
+}
+}
+
+@include landScape{
+    .content .title,
+    .content .text{
+        display: none;
+    }
+    .content{
+        top: 0;
+    }
+}
