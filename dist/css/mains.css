@@ -28,6 +28,18 @@ sub {
   vertical-align: super;
   font-size: smaller; }
 
+.menu ul {
+  display: flex; }
+  .menu ul li {
+    list-style-type: none; }
+
+.menu ul li:hover {
+  color: #D5BD67;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px; }
+
 .showcase {
   color: #D5BD67; }
   .showcase:after {
@@ -97,7 +109,8 @@ sub {
 .grid-3 {
   display: grid;
   grid-template-columns: 1fr  1fr;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  font-size: 1.5rem; }
 
 .grid-2 {
   display: grid;
@@ -126,7 +139,7 @@ footer {
 
 .services .history {
   color: #aaaaaa;
-  font-size: .8rem; }
+  font-size: 1.2rem; }
 
 main#contact .container-contact {
   max-width: 1170px;
@@ -229,9 +242,9 @@ main#contact .container-contact {
 
 .gallery_title {
   text-align: center;
-  padding: 20px;
+  padding-bottom: 20px;
   font-size: 2rem;
-  margin-top: 15%; }
+  margin-top: 2%; }
 
 .gallery-enter {
   text-align: center;
@@ -266,19 +279,27 @@ main#contact .container-contact {
 
 @media screen and (min-width: 1171px) {
   .navbar .menu a {
-    font-size: 1.0rem; } }
+    font-size: 0.7rem; } }
 
 @media screen and (min-width: 769px) {
   .gallery-enter img {
-    width: 950px; } }
+    width: 950px;
+    margin-left: 20px; } }
 
 @media screen and (max-width: 768px) {
   .gallery-enter img {
     width: 300px; }
   .smalllogo {
     display: none; }
+  .menu ul {
+    display: inherit;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0; }
   .navbar .menu a {
-    font-size: 1rem;
+    font-size: 12px;
     margin-left: 0;
     letter-spacing: 0;
     padding: 0 10px; }
@@ -327,16 +348,26 @@ main#contact .container-contact {
   .grid-3 {
     margin-top: 30px;
     grid-template-columns: 1fr;
-    grid-gap: 20px; }
+    grid-gap: 20px;
+    font-size: 1rem; }
   .galleryimage {
-    width: 300px; } }
+    width: 300px; }
+  .history {
+    font-size: 1rem; } }
 
 @media screen and (max-width: 450px) {
   .navbar .nav {
     font-size: 1rem; }
   .showcase .content img {
     width: 10px;
-    height: 10px; } }
+    height: 10px; }
+  .menu ul {
+    display: inherit;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0; } }
 
 @media (max-height: 500px) {
   .content .title,

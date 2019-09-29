@@ -2,7 +2,7 @@
 //Wide screen 1171px
 @include mediaXl{
 .navbar .menu a{
-    font-size: 1.0rem;
+    font-size: 0.7rem;
 }
 }
 
@@ -11,6 +11,7 @@
 
 .gallery-enter img{
     width: 950px;
+    margin-left: 20px;
 }
 }
 
@@ -25,8 +26,16 @@
 .smalllogo{
     display: none;
 }
+.menu ul{
+    display: inherit;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
 .navbar .menu a{
-    font-size: 1rem;
+    font-size: 12px;
     margin-left: 0;
     letter-spacing: 0;
     padding: 0 10px;
@@ -98,11 +107,14 @@
     margin-top: 30px;
     grid-template-columns:  1fr;
     grid-gap: 20px;
+    font-size: 1rem;
 }
 .galleryimage{
     width: 300px;
 }  
- 
+.history{
+    font-size: 1rem;
+} 
 
 
 
@@ -118,6 +130,15 @@
 .showcase .content img{
     width: 10px;
     height: 10px;
+}
+
+.menu ul{
+    display: inherit;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 }
 
