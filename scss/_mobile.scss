@@ -31,6 +31,11 @@
     letter-spacing: 0;
     padding: 0 10px;
 }
+.showcase .content .logo{
+    width: 150px;
+    height: 90px;
+}
+
 }
 
 
@@ -96,7 +101,11 @@
 }
 .galleryimage{
     width: 300px;
-}     
+}  
+ 
+
+
+
 }
 
 
@@ -105,6 +114,10 @@
 @include mediaXsm{
 .navbar .nav{
     font-size: 1rem;
+}
+.showcase .content img{
+    width: 10px;
+    height: 10px;
 }
 }
 
