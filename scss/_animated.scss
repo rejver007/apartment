@@ -12,6 +12,18 @@
     animation: shadow-pulse 1s infinite;
 }
 
+
+//pulsenonstop
+@keyframes pulse {
+  from { transform: scale(1); }
+  50% { transform: scale(0.85); }
+  to { transform: scale(1); }
+}
+@mixin pulsenonstop{
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
 // Shake few sec
 
 @keyframes shake {

@@ -2,7 +2,9 @@
 //Wide screen 1171px
 @include mediaXl{
 .navbar .menu a{
-    font-size: 0.7rem;
+    font-size: 1.3rem;
+    padding: 30px;
+    
 }
 }
 
@@ -27,12 +29,8 @@
     display: none;
 }
 .menu ul{
-    display: inherit;
-    background: #333;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    
 }
 .navbar .menu a{
     font-size: 12px;

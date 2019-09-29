@@ -29,7 +29,10 @@ sub{
     padding: 0;
     li{
         list-style-type: none;
-        
+        a{
+            font-size: .8rem;
+            margin-left: 10px;
+        }
     }
 }
 .menu ul li:hover{

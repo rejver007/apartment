@@ -4,6 +4,14 @@
   100% {
     box-shadow: 0 0 0 35px rgba(0, 0, 0, 0); } }
 
+@keyframes pulse {
+  from {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.85); }
+  to {
+    transform: scale(1); } }
+
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0); }
@@ -38,6 +46,9 @@ sub {
   padding: 0; }
   .menu ul li {
     list-style-type: none; }
+    .menu ul li a {
+      font-size: .8rem;
+      margin-left: 10px; }
 
 .menu ul li:hover {
   color: #D5BD67;
@@ -285,7 +296,8 @@ main#contact .container-contact {
 
 @media screen and (min-width: 1171px) {
   .navbar .menu a {
-    font-size: 0.7rem; } }
+    font-size: 1.3rem;
+    padding: 30px; } }
 
 @media screen and (min-width: 769px) {
   .gallery-enter img {
@@ -298,12 +310,7 @@ main#contact .container-contact {
   .smalllogo {
     display: none; }
   .menu ul {
-    display: inherit;
-    background: #333;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0; }
+    display: flex; }
   .navbar .menu a {
     font-size: 12px;
     margin-left: 0;
