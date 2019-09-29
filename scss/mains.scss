@@ -16,14 +16,20 @@ sub{
     vertical-align: super;
     font-size: smaller;
 }
-
+#dev{
+    font-size: 1rem;
+    color: rgb(138, 138, 138);
+    padding: 5px;
+}
 
 
 //newnav
 .menu ul{
     display: flex;
+    padding: 0;
     li{
         list-style-type: none;
+        
     }
 }
 .menu ul li:hover{

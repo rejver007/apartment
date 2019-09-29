@@ -28,8 +28,14 @@ sub {
   vertical-align: super;
   font-size: smaller; }
 
+#dev {
+  font-size: 1rem;
+  color: #8a8a8a;
+  padding: 5px; }
+
 .menu ul {
-  display: flex; }
+  display: flex;
+  padding: 0; }
   .menu ul li {
     list-style-type: none; }
 
