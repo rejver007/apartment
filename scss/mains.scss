@@ -20,6 +20,10 @@ sub{
     font-size: 1rem;
     color: rgb(138, 138, 138);
     padding: 5px;
+    a{
+        text-decoration: none;
+        color: rgba(138, 138, 138, 0.76);
+    }
 }
 
 
@@ -206,6 +210,7 @@ main#contact{
         .brand{
             text-align: center;
             padding-bottom: 70px;
+            @include pulsenonstop;
             &:hover{
                 @include shake;
                 cursor: pointer;
