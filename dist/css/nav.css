@@ -6,7 +6,7 @@
   top: 0;
   display: flex;
   align-items: center;
-  background: #f1f1f1;
+  background: #4141417a;
   width: 100%;
   z-index: 99;
 }
@@ -23,7 +23,7 @@
   right: 20px;
 }
 .menu a{
-  color: #333;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: 700;
   margin-left: 20px;
