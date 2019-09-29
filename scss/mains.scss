@@ -3,8 +3,7 @@
 
 *{
     box-sizing: border-box;
-    
-   
+    //outline: solid 2px red;
 }
 body{
     background: rgba(255, 255, 255, 0.9);
@@ -18,55 +17,7 @@ sub{
     font-size: smaller;
 }
 
-//navold
-/*.navbar{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgba(51, 51, 51, 0.849);
-    width: 100%;
-    height: 70px;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    
-    
-}
-.nav{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    
-    li{
-       margin: 0 55px;
-       
-       &:hover{
-           
-           @include easeOut;
-           @include shake;
-           
-       }
-    }
-    
-    li a{
-        text-decoration: none;
-        padding:0;
-        color: rgb(255, 255, 255);
-        font-size: 1.2rem;
-        &:hover{
-            cursor: pointer;
-            color: #D5BD67;
-            @include easeOut;
-            transform:scale(1.05);
-        }
-    }    
-}*/
+
 
 //newnav
 
@@ -74,7 +25,6 @@ sub{
 
 .showcase{
     color: #D5BD67;
-
     &:after{
     content: "";
     height:95vh;
@@ -111,11 +61,13 @@ sub{
         filter: blur(0px);
     -webkit-filter: blur(0px);
     }
+    a{
+        display: inline-block;
+    }
         .logo{
         text-align: center;
-
-        height: 130px;
-        width: 290px;
+        height: 230px;
+        width: 420px;
         cursor: pointer;
         }
         .title{

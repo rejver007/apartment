@@ -9,12 +9,6 @@ $secondary-color: #eece1e;
 
 
 
-
-
-
-
-
-
 // Media Query mixins
 @mixin mediaXsm{
     @media screen and(max-width:450px){
@@ -23,7 +17,7 @@ $secondary-color: #eece1e;
 }
 
 @mixin mediaSm{
-    @media screen and(max-width:580px){
+    @media screen and(max-width:600px){
         @content;
     }
 }
