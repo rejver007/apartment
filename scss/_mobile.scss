@@ -43,12 +43,20 @@
     height: 90px;
 }
 
-#swedish{
+#suomi{
+    width: 35px;
+    height: 35px;
+    position: fixed;
     left: 20px;
+    top: 22.5px;
     opacity: 1;
 }
-#suomi{
+#swedish{
+    width: 35px;
+    height: 35px;
+    position: fixed;
     left: 80px;
+    top: 22.5px;
     opacity: 1;
 }
 .showcase{
@@ -56,6 +64,12 @@
     filter: blur(0px);
     -webkit-filter: blur(0px);
     }
+}
+#sve{
+    display: none;
+}
+#fin{
+    display: none;
 }
 }
 
