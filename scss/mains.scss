@@ -41,31 +41,31 @@ sub{
 }
 .menu ul li:hover{
  color: #D5BD67;
- @include shake;
+ @include pulsenonstop;
+ 
 }
 
 .showcase{
     color: #D5BD67;
     &:after{
     content: "";
-    height:95vh;
+    height:100vh;
     width: 100%;
     background: url(../../showcase.jpg) no-repeat center /cover;
     display: block;
     filter: blur(10px);
     -webkit-filter: blur(10px);
-    transition: all 1000ms;
+    transition: all 600ms;
     }
     &:hover::after{
     filter: blur(0px);
     -webkit-filter: blur(0px);
-    
     }  
     &:hover .content{
     filter: blur(2px);
-    -webkit-filter: blur(02px);
+    -webkit-filter: blur(2px);
     cursor: pointer;
-    
+    opacity: 0.5;
     } 
     .content{
     position: absolute;
@@ -79,11 +79,16 @@ sub{
     text-align: center;
     transition: all 1000ms;
     &:hover{
-        filter: blur(0px);
+    filter: blur(0px);
     -webkit-filter: blur(0px);
+    opacity: 1;
     }
     a{
         display: inline-block;
+        text-decoration: none;
+        .title{
+            color: #D5BD67;
+        }
     }
         .logo{
         text-align: center;
@@ -108,10 +113,11 @@ sub{
         background: rgba(51, 51, 51, 0.39);
         color: #fff;
         border-radius: 5px;
-        @include pulse;
         text-transform: capitalize;
         }
-    } 
+    }
+
+    
 }
 
 .container{
@@ -211,17 +217,10 @@ main#contact{
             text-align: center;
             padding-bottom: 70px;
             @include pulsenonstop;
-            &:hover{
-                @include shake;
-                cursor: pointer;
-            }
+            
         }
         .wrapper{
-          box-shadow: 0 0 25px black; 
-          &:hover{
-              @include pulse;
-              
-          } 
+          box-shadow: 0 0 25px black;
         }
         .wrapper > *{
             padding: 1rem;
@@ -252,7 +251,7 @@ main#contact{
             background: #fff;
             h3{
                 text-align: center;
-                padding-bottom: 10px;
+                padding-bottom: 20px;
                 font-weight: 600;
                 text-transform: uppercase;
                 color: #444;
@@ -299,7 +298,6 @@ main#contact{
                   @include easeOut;
                   transform:scale(1.01);
                   outline: 0;
-                  @include pulse;
               }
             }
         }
@@ -345,8 +343,8 @@ main#contact{
     transform: scale(1.06);
     opacity: 0.3; 
     }  
-    img{
-    width: 800px;
+    a img{
+    width: 80%;
     transition: 0.6s;
     }
     .middle{
@@ -360,16 +358,20 @@ main#contact{
     text-align: center;
 
         .middletext{
-        background: #4caf50;
+        background: #333;
         color: #fff;
         font-size: 1.3rem;
         padding: 16px 32px;
         border-radius: 5px;
         cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 200;
+        letter-spacing: 5px;
         }
     }
     &:hover .middle{
     opacity: 1;
+    @include easeOut;
     }
     a{
     text-decoration: none;

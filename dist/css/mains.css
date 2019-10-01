@@ -55,29 +55,29 @@ sub {
 
 .menu ul li:hover {
   color: #D5BD67;
-  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px; }
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
 
 .showcase {
   color: #D5BD67; }
   .showcase:after {
     content: "";
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     background: url(../../showcase.jpg) no-repeat center/cover;
     display: block;
     filter: blur(10px);
     -webkit-filter: blur(10px);
-    transition: all 1000ms; }
+    transition: all 600ms; }
   .showcase:hover::after {
     filter: blur(0px);
     -webkit-filter: blur(0px); }
   .showcase:hover .content {
     filter: blur(2px);
     -webkit-filter: blur(2px);
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0.5; }
   .showcase .content {
     position: absolute;
     z-index: 1;
@@ -91,9 +91,13 @@ sub {
     transition: all 1000ms; }
     .showcase .content:hover {
       filter: blur(0px);
-      -webkit-filter: blur(0px); }
+      -webkit-filter: blur(0px);
+      opacity: 1; }
     .showcase .content a {
-      display: inline-block; }
+      display: inline-block;
+      text-decoration: none; }
+      .showcase .content a .title {
+        color: #D5BD67; }
     .showcase .content .logo {
       text-align: center;
       height: 230px;
@@ -115,7 +119,6 @@ sub {
       background: rgba(51, 51, 51, 0.39);
       color: #fff;
       border-radius: 5px;
-      animation: shadow-pulse 1s infinite;
       text-transform: capitalize; }
 
 .container {
@@ -175,16 +178,8 @@ main#contact .container-contact {
     animation-name: pulse;
     animation-duration: 3s;
     animation-iteration-count: infinite; }
-    main#contact .container-contact .brand:hover {
-      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-      transform: translate3d(0, 0, 0);
-      backface-visibility: hidden;
-      perspective: 1000px;
-      cursor: pointer; }
   main#contact .container-contact .wrapper {
     box-shadow: 0 0 25px black; }
-    main#contact .container-contact .wrapper:hover {
-      animation: shadow-pulse 1s infinite; }
   main#contact .container-contact .wrapper > * {
     padding: 1rem; }
   main#contact .container-contact h1 {
@@ -205,7 +200,7 @@ main#contact .container-contact {
     background: #fff; }
     main#contact .container-contact .contact h3 {
       text-align: center;
-      padding-bottom: 10px;
+      padding-bottom: 20px;
       font-weight: 600;
       text-transform: uppercase;
       color: #444; }
@@ -242,8 +237,7 @@ main#contact .container-contact {
         color: #444;
         transition: all 0.5s ease-out;
         transform: scale(1.01);
-        outline: 0;
-        animation: shadow-pulse 1s infinite; }
+        outline: 0; }
   main#contact .container-contact iframe {
     border: 0;
     padding: 10px 10px 10px 0;
@@ -275,8 +269,8 @@ main#contact .container-contact {
   .gallery-enter:hover img {
     transform: scale(1.06);
     opacity: 0.3; }
-  .gallery-enter img {
-    width: 800px;
+  .gallery-enter a img {
+    width: 80%;
     transition: 0.6s; }
   .gallery-enter .middle {
     transition: .5s ease;
@@ -288,14 +282,18 @@ main#contact .container-contact {
     -ms-transform: translate(-50%, -50%);
     text-align: center; }
     .gallery-enter .middle .middletext {
-      background: #4caf50;
+      background: #333;
       color: #fff;
       font-size: 1.3rem;
       padding: 16px 32px;
       border-radius: 5px;
-      cursor: pointer; }
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 200;
+      letter-spacing: 5px; }
   .gallery-enter:hover .middle {
-    opacity: 1; }
+    opacity: 1;
+    transition: all 0.5s ease-out; }
   .gallery-enter a {
     text-decoration: none;
     color: #fff; }
