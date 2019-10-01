@@ -88,9 +88,13 @@ sub{
     .navbar .menu ul li a{
         font-size: 1rem;
     }
+    #sve{
+        right: 55px;
+    }
 }
 .current{
     color: #D5BD67 !important;
+    opacity: 1 !important;
     
 }
 .showcase{
