@@ -59,6 +59,29 @@ sub {
   animation-duration: 3s;
   animation-iteration-count: infinite; }
 
+#suomi {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  right: 20px;
+  top: 22.5px;
+  opacity: .7; }
+  #suomi:hover {
+    opacity: 1; }
+
+#swedish {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  right: 80px;
+  top: 22.5px;
+  opacity: .7; }
+  #swedish:hover {
+    opacity: 1; }
+
+#suomibody .navbar .menu ul li a {
+  font-size: 1rem; }
+
 .showcase {
   color: #D5BD67; }
   .showcase:after {
@@ -322,7 +345,16 @@ main#contact .container-contact {
     padding: 0 10px; }
   .showcase .content .logo {
     width: 150px;
-    height: 90px; } }
+    height: 90px; }
+  #swedish {
+    left: 20px;
+    opacity: 1; }
+  #suomi {
+    left: 80px;
+    opacity: 1; }
+  .showcase:after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px); } }
 
 @media screen and (max-width: 600px) {
   .navbar {

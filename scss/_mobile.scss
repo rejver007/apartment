@@ -43,6 +43,20 @@
     height: 90px;
 }
 
+#swedish{
+    left: 20px;
+    opacity: 1;
+}
+#suomi{
+    left: 80px;
+    opacity: 1;
+}
+.showcase{
+    &:after{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    }
+}
 }
 
 
