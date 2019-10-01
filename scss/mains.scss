@@ -394,6 +394,7 @@ main#contact{
     &:hover img{
     transform: scale(1.06);
     opacity: 0.3; 
+    @include easeOut;
     }  
     a img{
     width: 80%;
@@ -424,6 +425,10 @@ main#contact{
     &:hover .middle{
     opacity: 1;
     @include easeOut;
+    &:hover a{
+        color: #D5BD67;
+        @include easeOut;
+    }
     }
     a{
     text-decoration: none;
