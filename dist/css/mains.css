@@ -23,8 +23,7 @@
     transform: translate3d(4px, 0, 0); } }
 
 * {
-  box-sizing: border-box;
-  outline: solid 2px red; }
+  box-sizing: border-box; }
 
 body {
   background: rgba(255, 255, 255, 0.9);
