@@ -23,7 +23,8 @@
     transform: translate3d(4px, 0, 0); } }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: solid 2px red; }
 
 body {
   background: rgba(255, 255, 255, 0.9);
@@ -103,6 +104,9 @@ sub {
   color: #D5BD67 !important;
   opacity: 1 !important; }
 
+.paragraph {
+  display: none; }
+
 .showcase {
   color: #D5BD67; }
   .showcase:after {
@@ -160,7 +164,6 @@ sub {
       font-size: 1.3rem;
       text-overflow: ellipsis;
       white-space: nowrap;
-      background: rgba(51, 51, 51, 0.39);
       color: #fff;
       border-radius: 5px;
       text-transform: capitalize; }
@@ -266,6 +269,9 @@ main#contact .container-contact {
       padding: 1em;
       border: 1px solid #444;
       background: #dddddd; }
+      main#contact .container-contact .contact form button:focus, main#contact .container-contact .contact form input:focus, main#contact .container-contact .contact form textarea:focus {
+        background: #c5ffc3;
+        transition: all 0.5s ease-in-out; }
     main#contact .container-contact .contact form button {
       background: #c4ffc4;
       border: 0;
@@ -301,15 +307,11 @@ main#contact .container-contact {
     border: solid 1px black;
     box-shadow: 0 0 25px #444; }
 
-.gallery_title {
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: 2rem;
-  margin-top: 10%; }
-
 .gallery-enter {
   text-align: center;
-  position: relative; }
+  position: relative;
+  padding-top: 30px;
+  background: #f4f4f4; }
   .gallery-enter:hover img {
     transform: scale(1.06);
     opacity: 0.3;
@@ -412,7 +414,8 @@ main#contact .container-contact {
       display: block;
       cursor: pointer; }
     .navbar .show {
-      max-height: 500px; }
+      max-height: 500px;
+      transition: all 0.5s ease-in-out; }
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
   .showcase::after {
@@ -426,7 +429,7 @@ main#contact .container-contact {
     .content .title {
       display: none; }
     .content .text {
-      display: none; }
+      font-size: 10px !important; }
   .grid-2 {
     grid-template-columns: 1fr; }
     .grid-2 .center {
@@ -439,7 +442,16 @@ main#contact .container-contact {
   .galleryimage {
     width: 300px; }
   .history {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .container .text_p {
+    display: none; }
+  .details h3 {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0; }
+  .paragraph {
+    display: block;
+    padding: 10px 10px 0 10px; } }
 
 @media screen and (max-width: 450px) {
   .navbar .nav {
