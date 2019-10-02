@@ -84,7 +84,7 @@ sub{
     }
 }
 
-#suomibody{
+body{
     .navbar .menu ul li a{
         font-size: 1rem;
     }
@@ -165,10 +165,12 @@ sub{
         font-size: 1.3rem;
         text-overflow: ellipsis;
         white-space: nowrap;
-        
+        background: rgba(51, 51, 51, 0.664);
         color: #fff;
         border-radius: 5px;
         text-transform: capitalize;
+        letter-spacing: 1px;
+        padding: 0 10px
         }
     }
 
@@ -362,7 +364,8 @@ main#contact{
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    margin: 20px; 
+    margin: 20px;
+    padding-top: 80px;
     
     img{
     width: 100%;
