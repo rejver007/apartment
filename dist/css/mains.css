@@ -216,6 +216,8 @@ footer {
   .services .history iframe {
     outline: none;
     border: solid 1px #333; }
+  .services .history .informations p {
+    text-align: left; }
 
 main#contact .container-contact {
   max-width: 700px;
