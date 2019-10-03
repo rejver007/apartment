@@ -262,6 +262,10 @@ main#contact{
         margin-left: auto;
         margin-right: auto;
         padding: 1em;
+        .wrapper{
+           margin-top: 80px;
+           
+        }
         .wrapper .company-info h3{
             text-align: center;
         }
@@ -273,13 +277,27 @@ main#contact{
                 text-align: center;
             }
         }
+        
         .brand{
             text-align: center;
-            padding-bottom: 70px;
+            padding: 0;
+            margin: 10px;
             font-size: 2.6rem;
-        
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             
         }
+
+        h2{
+            letter-spacing: 6px;
+            border-radius: 10px;
+           
+            
+        }
+        h1{
+            letter-spacing: 6px;
+            
+        }
+        
         .wrapper{
           box-shadow: 0 0 25px black;
         }
