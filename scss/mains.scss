@@ -102,6 +102,7 @@ body{
 .paragraph{
     display: none;
 }
+
 .showcase{
     color: #D5BD67;
     &:after{
@@ -113,16 +114,19 @@ body{
     filter: blur(10px);
     -webkit-filter: blur(10px);
     transition: all 600ms;
+    
     }
     &:hover::after{
     filter: blur(0px);
     -webkit-filter: blur(0px);
+
     }  
-    &:hover .content{
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    &:hover .content {
+    filter: blur(px);
+    -webkit-filter: blur(0px);
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 1;
+    @include easeOut;
     } 
     .content{
     position: absolute;
@@ -139,7 +143,9 @@ body{
     filter: blur(0px);
     -webkit-filter: blur(0px);
     opacity: 1;
+    
     }
+    
     a{
         display: inline-block;
         text-decoration: none;
@@ -176,8 +182,8 @@ body{
         }
     }
 
-    
-}
+}  
+
 
 .container{
     max-width: 1160px;
@@ -281,11 +287,7 @@ main#contact{
                 text-align: left;
                 margin: 0 0 1rem 0;
                 overflow-y: auto;
-                li iframe:hover{
-                    transform:scale(0.95);
-                    @include easeOut;
-                    
-                }            
+                          
                 
             }
         }

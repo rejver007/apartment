@@ -121,10 +121,11 @@ body .navbar .menu ul li a {
     filter: blur(0px);
     -webkit-filter: blur(0px); }
   .showcase:hover .content {
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    filter: blur(px);
+    -webkit-filter: blur(0px);
     cursor: pointer;
-    opacity: 0.5; }
+    opacity: 1;
+    transition: all 0.5s ease-out; }
   .showcase .content {
     position: absolute;
     z-index: 1;
@@ -242,9 +243,6 @@ main#contact .container-contact {
       text-align: left;
       margin: 0 0 1rem 0;
       overflow-y: auto; }
-      main#contact .container-contact .company-info h3 li iframe:hover, main#contact .container-contact .company-info ul li iframe:hover {
-        transform: scale(0.95);
-        transition: all 0.5s ease-out; }
   main#contact .container-contact .contact {
     background: #fff; }
     main#contact .container-contact .contact h3 {
