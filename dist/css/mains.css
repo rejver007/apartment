@@ -233,9 +233,7 @@ main#contact .container-contact {
   main#contact .container-contact .brand {
     text-align: center;
     padding-bottom: 70px;
-    animation-name: pulse;
-    animation-duration: 3s;
-    animation-iteration-count: infinite; }
+    font-size: 2.6rem; }
   main#contact .container-contact .wrapper {
     box-shadow: 0 0 25px black; }
   main#contact .container-contact .wrapper > * {
