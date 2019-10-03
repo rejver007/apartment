@@ -247,9 +247,7 @@ footer{
     .container{
         width: 100%;
     }
-    #frame{
-        border: none;
-    }
+    
     table tr td{
         font-size: 1rem;
         padding-right: 40px;
@@ -275,6 +273,9 @@ footer{
     iframe{
         outline: none;
         border: solid 1px #333;
+    }
+    .frame{
+        border-bottom: none;
     }
     
 }

@@ -213,9 +213,6 @@ footer {
 .services .container {
   width: 100%; }
 
-.services #frame {
-  border: none; }
-
 .services table tr td {
   font-size: 1rem;
   padding-right: 40px;
@@ -234,6 +231,9 @@ footer {
 .services iframe {
   outline: none;
   border: solid 1px #333; }
+
+.services .frame {
+  border-bottom: none; }
 
 main#contact .container-contact {
   max-width: 700px;
