@@ -10,13 +10,10 @@
     <link rel="stylesheet" href="lightbox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
     <script src="lightbox-plus-jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
-        integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    
-   <link rel="stylesheet" href="dist/css/nav.css">
-    
-    <title>Frangsdalsvagen</title>
+    <link rel="stylesheet" href="dist/css/nav.css">
+    <title>GERBY | Lägenhet till salu</title>
 </head>
 <body>
     <div class="navbar">
@@ -48,9 +45,9 @@
     
     <header class="showcase">
         <div class="content">
-            <a href="https://www.frangsdalsvagen.cf#textdetails"><img src="logo.png" class="logo animated bounceInLeft" alt="logo">
-            <div class="title">Välkommen till Gerby</div>
-            <p class="text">Är du intresserad av att bli ägare till ett vackert hem?</p></a>
+            <a href="https://www.frangsdalsvagen.cf#textdetails"><img src="logo.png" id="logohome" class="logo animated bounceInLeft" alt="logo">
+            <div class="wrappedtext"><div class="title">Välkommen till Gerby</div>
+            <p class="text">Är du intresserad av att bli ägare till ett vackert hem?</p></div></a>
         </div>
     </header>
 
@@ -116,18 +113,20 @@
             <div>
                 <i class="fa fa-history fa-4x"></i>
                 <h3>Husets historia</h3>
-                <p class="history">År 2001 - Golvet ombyggt</p>
-                <p class="history">År 2003 - Tak ombyggt</p>
-                <p class="history">År 2003 - Trädgård renoverad</p>
-                
+                <p class="history">År 2006 - Textarea</p>
+                <p class="history">År 20013 - Textareat</p>
+                <p class="history">År 20013 - Textarea</p>
             </div>
             
-            <div>
+            <div class="informations">
                 <i class="fa fa-info fa-4x"></i>
                 <h3>Information om huset</h3>
+                
                 <p class="history">Huset har 85 m<sub>2</sub></p>
                 <p class="history">Det finns 2 våningar och 2 balkonger</p>
-                <p class="history" id="svenska">Svenska samhället</p>
+                <p class="history">Frängsdalsvägen 42 B5 65280 Gerby</p>
+                <p class="history"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6377.839593220224!2d21.583185626828794!3d63.13932324692131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467d611465772351%3A0xea1bd232befe1361!2sb5%2C%20Kortelaaksontie%2042%2C%2065280%20Vaasa!5e0!3m2!1sen!2sfi!4v1569867522336!5m2!1sen!2sfi"></iframe></p>
                 
             </div>
         </div>
@@ -136,21 +135,19 @@
 <!--Contact form-->
 <main id="contact">
     <div class="container-contact">
-        <h1 class="brand" title="Fyll i formuläret">Vi kan prata om pris?</h1>
+        <h1 class="brand up">85<span>m<sub>2</sub></span></h1>
+        <h2 class="brand">189 000 €</h2>
         <div class="wrapper">
             <div class="company-info">
-                <h3>Kontakta mig på:</h3>
+                <h3>Tveka inte, ta kontakt:</h3>
                 <ul>
                     <li><i class="fa fa-phone"></i> (050) 5427498</li>
-                    <li><i class="fa fa-envelope"></i> info@vesselinninov.com</li>
-                    <li><i class="fa fa-road"></i> Frängsdalsvägen 42 B5 65280 Gerby </li>
-                    <li><iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6377.839593220224!2d21.583185626828794!3d63.13932324692131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467d611465772351%3A0xea1bd232befe1361!2sb5%2C%20Kortelaaksontie%2042%2C%2065280%20Vaasa!5e0!3m2!1sen!2sfi!4v1569867522336!5m2!1sen!2sfi"></iframe>
-                    </li>
+                    <li><i class="fa fa-envelope"></i> frangsdalsvagen@gmail.com</li>
+                    
                 </ul>
+                <hr>
             </div>
             <div class="contact">
-                <h3>Komma i kontakt</h3>
                 <form method="POST" data-netlify="true">
                     <p>
                         <label>Namn:</label>

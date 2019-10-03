@@ -121,10 +121,11 @@ body .navbar .menu ul li a {
     filter: blur(0px);
     -webkit-filter: blur(0px); }
   .showcase:hover .content {
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
     cursor: pointer;
-    opacity: 0.5; }
+    opacity: 1;
+    transition: all 0.5s ease-out; }
   .showcase .content {
     position: absolute;
     z-index: 1;
@@ -212,21 +213,41 @@ footer {
 .services .history {
   color: #aaaaaa;
   font-size: 1.2rem; }
+  .services .history iframe {
+    outline: none;
+    border: solid 1px #333; }
+  .services .history .informations p {
+    text-align: left; }
 
 main#contact .container-contact {
-  max-width: 1170px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding: 1em; }
+  main#contact .container-contact .wrapper {
+    margin-top: 80px; }
+  main#contact .container-contact .wrapper .company-info h3 {
+    text-align: center; }
   main#contact .container-contact ul {
     list-style: none;
-    padding: none; }
+    padding: 0;
+    margin: 0; }
+    main#contact .container-contact ul li {
+      text-align: center; }
   main#contact .container-contact .brand {
     text-align: center;
-    padding-bottom: 70px;
-    animation-name: pulse;
-    animation-duration: 3s;
-    animation-iteration-count: infinite; }
+    padding: 0;
+    margin: 10px;
+    font-size: 2.6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  main#contact .container-contact h2 {
+    letter-spacing: 6px;
+    border-radius: 10px; }
+  main#contact .container-contact h1 {
+    text-align: center;
+    letter-spacing: 6px; }
+    main#contact .container-contact h1 span {
+      letter-spacing: 0; }
   main#contact .container-contact .wrapper {
     box-shadow: 0 0 25px black; }
   main#contact .container-contact .wrapper > * {
@@ -242,9 +263,6 @@ main#contact .container-contact {
       text-align: left;
       margin: 0 0 1rem 0;
       overflow-y: auto; }
-      main#contact .container-contact .company-info h3 li iframe:hover, main#contact .container-contact .company-info ul li iframe:hover {
-        transform: scale(0.95);
-        transition: all 0.5s ease-out; }
   main#contact .container-contact .contact {
     background: #fff; }
     main#contact .container-contact .contact h3 {
@@ -290,11 +308,6 @@ main#contact .container-contact {
         transition: all 0.5s ease-out;
         transform: scale(1.01);
         outline: 0; }
-  main#contact .container-contact iframe {
-    border: 0;
-    padding: 10px 10px 10px 0;
-    width: 100%;
-    height: 100%; }
 
 .gallery {
   display: grid;
@@ -316,11 +329,10 @@ main#contact .container-contact {
   padding-top: 30px;
   background: #f4f4f4; }
   .gallery-enter:hover img {
-    transform: scale(1.06);
-    opacity: 0.3;
+    transform: scale(1.01);
     transition: all 0.5s ease-out; }
   .gallery-enter a img {
-    width: 80%;
+    width: 70%;
     transition: 0.6s; }
   .gallery-enter .middle {
     transition: .5s ease;
@@ -422,15 +434,16 @@ main#contact .container-contact {
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
   .showcase::after {
-    height: 50vh; }
+    height: 65vh; }
   .content {
-    top: 0%;
+    top: 0;
     margin-top: 1px; }
     .content .logo {
       height: 70px;
       width: 130px; }
     .content .title {
-      display: none; }
+      font-size: 18px !important;
+      background: rgba(51, 51, 51, 0.329); }
     .content .text {
       font-size: 10px !important; }
   .grid-2 {
@@ -469,6 +482,10 @@ main#contact .container-contact {
     align-items: center;
     padding: 0;
     margin: 0; } }
+
+@media screen and (max-width: 400px) {
+  .showcase .content .text {
+    font-size: 5rem; } }
 
 @media (max-height: 500px) {
   .content .title,
