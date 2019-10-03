@@ -15,6 +15,7 @@ body{
 sub{
     vertical-align: super;
     font-size: smaller;
+    
 }
 #dev{
     font-size: 1rem;
@@ -294,7 +295,11 @@ main#contact{
             
         }
         h1{
+            text-align: center;
             letter-spacing: 6px;
+            span{
+                letter-spacing: 0;
+            }
             
         }
         
