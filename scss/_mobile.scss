@@ -14,7 +14,9 @@
 .gallery-enter img{
     width: 950px;
     margin-left: 20px;
+    
 }
+
 }
 
 // Tablets & Small Laptops 768px
@@ -72,11 +74,14 @@
     display: none;
 }
 
+
 }
 
 
 // Smartphones 600px
 @include mediaSm{
+
+
 
 .navbar{
     overflow-x: hidden;
@@ -109,10 +114,10 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 } 
  .showcase::after{
-    height: 50vh;
+    height: 65vh;
 }
 .content{
-    top: 0%;
+    top: 0;
     margin-top: 1px;
     .logo{
     height: 70px;
@@ -182,6 +187,13 @@
 }
 }
 
+//Very small 
+@include mediaXXsm{
+    .showcase .content .text{
+        font-size: 5rem;
+    }
+}
+//Landscape
 @include landScape{
     .content .title,
     .content .text{
