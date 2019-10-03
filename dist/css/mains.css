@@ -181,7 +181,7 @@ body .navbar .menu ul li a {
 
 .grid-3 {
   display: grid;
-  grid-template-columns: 1fr  1fr;
+  grid-template-columns: 1fr  1fr 1fr;
   grid-gap: 20px;
   font-size: 1.5rem; }
 
@@ -210,14 +210,30 @@ footer {
   footer p {
     margin: 0; }
 
-.services .history {
-  color: #aaaaaa;
-  font-size: 1.2rem; }
-  .services .history iframe {
-    outline: none;
-    border: solid 1px #333; }
-  .services .history .informations p {
-    text-align: left; }
+.services .container {
+  width: 100%; }
+
+.services #frame {
+  border: none; }
+
+.services table tr td {
+  font-size: 1rem;
+  padding-right: 40px;
+  padding-top: 25px;
+  color: #818181;
+  border-bottom: solid 1px rgba(51, 51, 51, 0.158);
+  text-align: left; }
+
+.services table tr .tdbold {
+  color: rgba(0, 0, 0, 0.623);
+  font-weight: bold; }
+
+.services .grids {
+  width: 100%; }
+
+.services iframe {
+  outline: none;
+  border: solid 1px #333; }
 
 main#contact .container-contact {
   max-width: 700px;
@@ -408,7 +424,16 @@ main#contact .container-contact {
   #sve {
     display: none; }
   #fin {
-    display: none; } }
+    display: none; }
+  .grid-3 {
+    grid-template-columns: 1fr; }
+  .services table tr td {
+    text-align: center;
+    width: 10%;
+    border-bottom: solid 1px rgba(51, 51, 51, 0.116);
+    margin: auto; }
+  .services .frame {
+    border-bottom: none; } }
 
 @media screen and (max-width: 600px) {
   .navbar {
@@ -451,10 +476,19 @@ main#contact .container-contact {
     .grid-2 .center {
       display: none; }
   .grid-3 {
-    margin-top: 30px;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
-    font-size: 1rem; }
+    grid-gap: 40px;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0; }
+    .grid-3 .grids {
+      width: 80%;
+      margin-top: 90px;
+      margin-right: auto;
+      margin-left: auto; }
+  .services table tr td {
+    text-align: left;
+    width: 10%; }
   .galleryimage {
     width: 300px;
     margin-top: -35px; }
