@@ -213,15 +213,23 @@ footer {
 .services .history {
   color: #aaaaaa;
   font-size: 1.2rem; }
+  .services .history iframe {
+    outline: none;
+    border: solid 1px #333; }
 
 main#contact .container-contact {
-  max-width: 1170px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding: 1em; }
+  main#contact .container-contact .wrapper .company-info h3 {
+    text-align: center; }
   main#contact .container-contact ul {
     list-style: none;
-    padding: none; }
+    padding: 0;
+    margin: 0; }
+    main#contact .container-contact ul li {
+      text-align: center; }
   main#contact .container-contact .brand {
     text-align: center;
     padding-bottom: 70px;
@@ -288,11 +296,6 @@ main#contact .container-contact {
         transition: all 0.5s ease-out;
         transform: scale(1.01);
         outline: 0; }
-  main#contact .container-contact iframe {
-    border: 0;
-    padding: 10px 10px 10px 0;
-    width: 100%;
-    height: 100%; }
 
 .gallery {
   display: grid;
