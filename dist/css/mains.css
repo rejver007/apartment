@@ -265,7 +265,7 @@ main#contact .container-contact {
     main#contact .container-contact h1 span {
       letter-spacing: 0; }
   main#contact .container-contact .wrapper {
-    box-shadow: 0 0 25px black; }
+    box-shadow: 0 5px 10px black; }
   main#contact .container-contact .wrapper > * {
     padding: 1rem; }
   main#contact .container-contact h1 {
