@@ -203,8 +203,11 @@ body{
     grid-template-columns: 1fr  1fr 1fr;
     grid-gap: 20px;
     font-size: 1.4rem;
+    
     .grids table tr td{
         font-size: .9rem;
+        padding: 15px 0;
+        
     }
 }
 .divframe{
