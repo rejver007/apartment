@@ -187,6 +187,13 @@ body .navbar .menu ul li a {
   .grid-3 .grids table tr td {
     font-size: .9rem; }
 
+.divframe {
+  text-align: center;
+  margin: auto; }
+  .divframe iframe {
+    max-width: 1299px;
+    width: 70%; }
+
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr;

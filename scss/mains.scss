@@ -206,9 +206,14 @@ body{
     .grids table tr td{
         font-size: .9rem;
     }
-    
-    
-    
+}
+.divframe{
+    text-align: center;
+    margin: auto;
+    iframe{
+        max-width: 1299px;
+        width: 70%;
+    }
 }
 .grid-2{
     display: grid;
