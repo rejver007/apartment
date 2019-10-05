@@ -191,8 +191,10 @@ body .navbar .menu ul li a {
   text-align: center;
   margin: auto; }
   .divframe iframe {
-    max-width: 1299px;
+    max-width: 700px;
     width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     opacity: .8; }
     .divframe iframe:hover {
       opacity: 1;
@@ -442,6 +444,8 @@ main#contact .container-contact {
     display: none; }
   .grid-3 {
     grid-template-columns: 1fr; }
+    .grid-3 .tdleft {
+      text-align: left; }
   .services table tr td {
     text-align: center;
     width: 10%;

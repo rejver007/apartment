@@ -75,7 +75,11 @@
 }
 .grid-3{
     grid-template-columns:  1fr;
-    
+    .tdleft{
+        text-align: left;
+        
+        
+    }
 }
 .services table tr td{
     text-align: center;
