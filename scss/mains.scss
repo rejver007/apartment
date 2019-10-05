@@ -213,6 +213,13 @@ body{
     iframe{
         max-width: 1299px;
         width: 70%;
+        opacity: .8;
+        &:hover{
+            opacity: 1;
+            @include easeInOut;
+            transform: scale(1.006);
+            background: #333;
+        }
     }
 }
 .grid-2{

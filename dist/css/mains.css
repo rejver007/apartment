@@ -192,7 +192,13 @@ body .navbar .menu ul li a {
   margin: auto; }
   .divframe iframe {
     max-width: 1299px;
-    width: 70%; }
+    width: 70%;
+    opacity: .8; }
+    .divframe iframe:hover {
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+      transform: scale(1.006);
+      background: #333; }
 
 .grid-2 {
   display: grid;
