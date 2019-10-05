@@ -218,13 +218,11 @@ body{
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-        opacity: .8;
-        &:hover{
-            opacity: 1;
-            @include easeInOut;
-            transform: scale(1.006);
-            background: #333;
-        }
+        opacity: 1;
+        box-shadow: 0 5px 10px #444;
+        outline: none;
+        border: solid 1px rgb(0, 0, 0);
+        border-radius: 5px;
     }
 }
 .grid-2{
@@ -291,16 +289,7 @@ footer{
         width: 100%;
     }
 }
-.services {
-    iframe{
-        outline: none;
-        border: solid 1px #333;
-    }
-    .frame{
-        border-bottom: none;
-    }
-    
-}
+
 
 
 
@@ -309,14 +298,15 @@ footer{
 
 //Contact Form//
 main#contact{
+    
     .container-contact{
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
         padding: 1em;
+       
         .wrapper{
            margin-top: 80px;
-           
         }
         .wrapper .company-info h3{
             text-align: center;
@@ -356,9 +346,11 @@ main#contact{
         
         .wrapper{
           box-shadow: 0 5px 10px black;
+          
         }
         .wrapper > *{
             padding: 1rem;
+            
         }
         h1{
             margin-bottom: 20px;
@@ -484,7 +476,7 @@ main#contact{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-
+    
         .middletext{
         background: #333;
         color: #fff;
@@ -495,19 +487,31 @@ main#contact{
         text-transform: uppercase;
         font-weight: 200;
         letter-spacing: 5px;
+        border-radius: 10px;
+            a{
+                font-weight: 700;
+            }
         }
     }
     &:hover .middle{
     opacity: 1;
+    
     @include easeOut;
-    &:hover a{
-        color: #D5BD67;
+    &:hover .middletext{
+        color: #333;
+        background: #fff;
         @include easeOut;
+        font-weight: 700;
+    }
+    &:hover a{
+        color: #333;
+        
     }
     }
     a{
     text-decoration: none;
     color: #fff;
+    font-weight: 700;
     }
 
 }

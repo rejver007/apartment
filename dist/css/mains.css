@@ -196,12 +196,11 @@ body .navbar .menu ul li a {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    opacity: .8; }
-    .divframe iframe:hover {
-      opacity: 1;
-      transition: all 0.5s ease-in-out;
-      transform: scale(1.006);
-      background: #333; }
+    opacity: 1;
+    box-shadow: 0 5px 10px #444;
+    outline: none;
+    border: solid 1px black;
+    border-radius: 5px; }
 
 .grid-2 {
   display: grid;
@@ -245,13 +244,6 @@ footer {
 
 .services .grids {
   width: 100%; }
-
-.services iframe {
-  outline: none;
-  border: solid 1px #333; }
-
-.services .frame {
-  border-bottom: none; }
 
 main#contact .container-contact {
   max-width: 700px;
@@ -386,16 +378,24 @@ main#contact .container-contact {
       cursor: pointer;
       text-transform: uppercase;
       font-weight: 200;
-      letter-spacing: 5px; }
+      letter-spacing: 5px;
+      border-radius: 10px; }
+      .gallery-enter .middle .middletext a {
+        font-weight: 700; }
   .gallery-enter:hover .middle {
     opacity: 1;
     transition: all 0.5s ease-out; }
+    .gallery-enter:hover .middle:hover .middletext {
+      color: #333;
+      background: #fff;
+      transition: all 0.5s ease-out;
+      font-weight: 700; }
     .gallery-enter:hover .middle:hover a {
-      color: #D5BD67;
-      transition: all 0.5s ease-out; }
+      color: #333; }
   .gallery-enter a {
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-weight: 700; }
 
 @media screen and (min-width: 1171px) {
   .navbar .menu a {
