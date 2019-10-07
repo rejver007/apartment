@@ -52,12 +52,8 @@ sub {
     .menu ul li a {
       font-size: .8rem;
       margin-left: 10px; }
-
-.menu ul li:hover {
-  color: #D5BD67;
-  animation-name: pulse;
-  animation-duration: 3s;
-  animation-iteration-count: infinite; }
+    .menu ul li:hover {
+      color: #D5BD67; }
 
 #suomi {
   width: 20px;
