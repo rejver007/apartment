@@ -113,7 +113,6 @@ body{
     filter: blur(10px);
     -webkit-filter: blur(10px);
     transition: all 600ms;
-    
     }
     &:hover::after{
     filter: blur(0px);
